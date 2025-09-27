@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мемориал Бабий Яр - В память о жертвах</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#ffffff'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .memory-card {
+            transition: all 0.3s ease;
+            filter: grayscale(100%);
+        }
+        
+        .memory-card:hover {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+        }
+        
+        .portal-circle {
+            width: 300px;
+            height: 300px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            position: relative;
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        .portal-inner {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 8s linear infinite;
+        }
+        
+        .portal-light {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+        
+        @keyframes rotate {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        @keyframes glow {
+            0% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+            100% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-['Inter']">
+    <header class="hero-bg text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute top-6 left-6 z-10">
+            <div class="font-['Pacifico'] text-2xl">logo</div>
+        </div>
+        
+        <div class="container mx-auto px-6 text-center z-10 relative">
+            <div class="fade-in">
+                <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tight">БАБИЙ ЯР</h1>
+                <p class="text-xl md:text-2xl font-light mb-8 opacity-90">В память о жертвах трагедии</p>
+                <div class="text-lg md:text-xl font-medium">
+                    <p>29 сентября 2025</p>
+                    <p>Лос-Анджелес, Калифорния</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute inset-0 opacity-20">
+            <div style="background-image: url('https://readdy.ai/api/search-image?query=black%20and%20white%20historical%20memorial%20candles%20flame%20remembrance%20solemn%20atmosphere%20dark%20background%20minimalist%20composition%20emotional%20tribute&width=1920&height=1080&seq=hero001&orientation=landscape'); background-size: cover; background-position: center; width: 100%; height: 100%;"></div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
+                        <div style="background-image: url('https://readdy.ai/api/search-image?query=black%20and%20white%20historical%20photograph%20world%20war%20two%20memorial%20monument%20solemn%20remembrance%20vintage%20documentary%20style%20emotional%20tribute%20victims&width=600&height=400&seq=history001&orientation=landscape'); background-size: cover; background-position: center; width: 100%; height: 100%; filter: grayscale(100%);"></div>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">История памяти</h2>
+                    <div class="space-y-4 text-lg leading-relaxed text-gray-700">
+                        <p>Бабий Яр — место скорби и памяти, где в сентябре 1941 года произошла одна из самых страшных трагедий Второй мировой войны. Здесь погибли десятки тысяч невинных людей.</p>
+                        
+                        <p>Наша церемония в Лос-Анджелесе 29 сентября 2025 года станет актом памяти и почтения всем жертвам. Мы собираемся, чтобы помнить, чтобы никогда не забывать уроки истории.</p>
+                        
+                        <p>Каждое имя, каждая история — это напоминание о ценности человеческой жизни и важности защиты достоинства каждого человека.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-6 text-gray-900">Капсула памяти</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Здесь мы чтим память каждого человека, чья жизнь была прервана. Каждое лицо — это история, каждое имя — это память.</p>
+            </div>
+            
+            <div id="memoryGrid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <!-- Memory cards will be populated by JavaScript -->
+            </div>
+            
+            <div class="text-center mt-12 fade-in">
+                <button id="loadMore" class="bg-gray-900 text-white px-8 py-3 rounded-button hover:bg-gray-800 transition-colors !rounded-button whitespace-nowrap">
+                    Показать больше
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl font-bold mb-8">Портал мира</h2>
+                <p class="text-xl mb-12 opacity-90 max-w-2xl mx-auto">Из тьмы трагедии рождается свет надежды. Этот символ напоминает нам о силе человеческого духа и важности мира.</p>
+            </div>
+            
+            <div class="flex justify-center mb-12 fade-in">
+                <div class="portal-circle flex items-center justify-center">
+                    <div class="portal-inner"></div>
+                    <div class="portal-light"></div>
+                </div>
+            </div>
+            
+            <div class="fade-in">
+                <p class="text-lg opacity-80 italic">"Память — это мост между прошлым и будущим"</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-4xl font-bold mb-6 text-gray-900">Информация о церемонии</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm fade-in">
+                    <div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-gray-900 text-white rounded-full">
+                        <i class="ri-calendar-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Дата и время</h3>
+                    <p class="text-gray-600">29 сентября 2025<br>18:00 - 20:00</p>
+                </div>
+                
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm fade-in">
+                    <div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-gray-900 text-white rounded-full">
+                        <i class="ri-map-pin-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Место проведения</h3>
+                    <p class="text-gray-600">Мемориальный центр<br>Лос-Анджелес, Калифорния</p>
+                </div>
+                
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm fade-in">
+                    <div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-gray-900 text-white rounded-full">
+                        <i class="ri-phone-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Контакты</h3>
+                    <p class="text-gray-600">+1 (555) 123-4567<br>info@memorial.org</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center">
+                <div class="font-['Pacifico'] text-2xl mb-4">logo</div>
+                <p class="text-gray-400 mb-6">В память о жертвах Бабьего Яра и всех жертвах Второй мировой войны</p>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-facebook-line"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-twitter-line"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-instagram-line"></i>
+                        </div>
+                    </a>
+                </div>
+                <p class="text-sm text-gray-500">&copy; 2025 Мемориал Бабий Яр. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="fadeInAnimation">
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <script id="memoryCapsula">
+        document.addEventListener('DOMContentLoaded', function() {
+            const memoryData = [
+                { name: 'Анна Коваленко', age: 28, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20young%20woman%201940s%20vintage%20photograph%20solemn%20expression%20historical%20memorial%20tribute&width=200&height=200&seq=mem001&orientation=squarish' },
+                { name: 'Михаил Петров', age: 34, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20middle%20aged%20man%201940s%20vintage%20photograph%20serious%20expression%20historical%20memorial&width=200&height=200&seq=mem002&orientation=squarish' },
+                { name: 'София Иванова', age: 19, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20young%20girl%201940s%20vintage%20photograph%20innocent%20face%20historical%20memorial%20tribute&width=200&height=200&seq=mem003&orientation=squarish' },
+                { name: 'Давид Розенберг', age: 45, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20elderly%20man%201940s%20vintage%20photograph%20wise%20eyes%20historical%20memorial%20tribute&width=200&height=200&seq=mem004&orientation=squarish' },
+                { name: 'Елена Волкова', age: 31, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20woman%201940s%20vintage%20photograph%20gentle%20smile%20historical%20memorial%20tribute&width=200&height=200&seq=mem005&orientation=squarish' },
+                { name: 'Александр Смирнов', age: 26, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20young%20man%201940s%20vintage%20photograph%20determined%20look%20historical%20memorial&width=200&height=200&seq=mem006&orientation=squarish' },
+                { name: 'Мария Федорова', age: 22, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20young%20woman%201940s%20vintage%20photograph%20hopeful%20eyes%20historical%20memorial%20tribute&width=200&height=200&seq=mem007&orientation=squarish' },
+                { name: 'Иосиф Левин', age: 52, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20older%20man%201940s%20vintage%20photograph%20kind%20face%20historical%20memorial%20tribute&width=200&height=200&seq=mem008&orientation=squarish' },
+                { name: 'Раиса Николаева', age: 37, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20woman%201940s%20vintage%20photograph%20strong%20gaze%20historical%20memorial%20tribute&width=200&height=200&seq=mem009&orientation=squarish' },
+                { name: 'Борис Андреев', age: 29, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20man%201940s%20vintage%20photograph%20thoughtful%20expression%20historical%20memorial&width=200&height=200&seq=mem010&orientation=squarish' },
+                { name: 'Вера Соколова', age: 24, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20young%20woman%201940s%20vintage%20photograph%20serene%20face%20historical%20memorial%20tribute&width=200&height=200&seq=mem011&orientation=squarish' },
+                { name: 'Григорий Морозов', age: 41, photo: 'https://readdy.ai/api/search-image?query=black%20and%20white%20portrait%20middle%20aged%20man%201940s%20vintage%20photograph%20noble%20bearing%20historical%20memorial&width=200&height=200&seq=mem012&orientation=squarish' }
+            ];
+
+            let displayedCount = 6;
+            const memoryGrid = document.getElementById('memoryGrid');
+            const loadMoreBtn = document.getElementById('loadMore');
+
+            function renderMemoryCards(count) {
+                memoryGrid.innerHTML = '';
+                for (let i = 0; i < Math.min(count, memoryData.length); i++) {
+                    const person = memoryData[i];
+                    const card = document.createElement('div');
+                    card.className = 'memory-card bg-white rounded-lg shadow-sm overflow-hidden';
+                    card.innerHTML = `
+                        <div class="aspect-square bg-gray-200">
+                            <div style="background-image: url('${person.photo}'); background-size: cover; background-position: center; width: 100%; height: 100%;"></div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-semibold text-sm">${person.name}</h3>
+                            <p class="text-xs text-gray-600">${person.age} лет</p>
+                        </div>
+                    `;
+                    memoryGrid.appendChild(card);
+                }
+            }
+
+            loadMoreBtn.addEventListener('click', function() {
+                displayedCount += 6;
+                renderMemoryCards(displayedCount);
+                
+                if (displayedCount >= memoryData.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            });
+
+            renderMemoryCards(displayedCount);
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = 'vv3W55WpiPXe88Jx0eozkw';
+    window.host = 'readdy.ai';
+</script>
+</body>
+</html>
